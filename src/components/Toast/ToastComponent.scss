@@ -1,0 +1,88 @@
+@import '../../scss\ variables/color';
+
+.toast {
+    align-items: flex-start;
+    border-radius: 4px;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;    
+    position: fixed;  
+    
+    width: 20%;
+    &-right-up{
+        right: 24px;
+        top: 24px;
+    }
+    &-right-down{
+        right: 24px;
+        bottom: 24px;
+    }
+    &-left-up{
+        left: 24px;
+        top: 24px;
+    }
+    &-left-down{
+        left: 24px;
+        bottom: 24px;
+    }
+    &-center{
+        top: 50%; 
+        left: 40%; 
+
+        
+    }
+    &-warning{
+        background-color: $goldenrod;
+        box-shadow: 0px 5px 5px 0px $yellow;
+    }
+    &-info{
+        background-color: $deepskyblue;
+        box-shadow: 0px 5px 5px 0px $darkslateblue;
+    }
+    &-success{
+        background-color: $mediumseagreen;
+        box-shadow: 0px 5px 5px 0px $lawngreen;
+    }
+    &-danger{
+        background-color: $red;
+        box-shadow: 0px 5px 5px 0px $darkred;
+    }
+    &-default{
+        background-color: $lightslategrey;
+        box-shadow: 0px 5px 5px 0px $darkgray;
+    }
+    
+  }
+ .display{
+    display: block;
+}
+.hide{
+    display: none;
+}
+  
+  .toast:not(:last-child) {
+    margin: 0 0 12px;
+  }  
+  
+  .toast__content {
+    flex: 8;
+    margin: 0 12px 0 0;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .toast__dismiss {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    flex: 1;
+    font: inherit;
+    padding: 0;
+  }
+  
+  

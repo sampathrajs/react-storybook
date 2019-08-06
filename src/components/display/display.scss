@@ -1,0 +1,14 @@
+@import '../../scss\ variables/color';
+.container{
+    display: flex;    
+    flex-direction: row;    
+  }
+.fieldName{
+flex: 3;
+padding-left: 10px;
+background-color: $green;
+}
+.fieldValue{
+flex: 7;
+background-color: $red;
+}

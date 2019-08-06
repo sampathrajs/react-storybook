@@ -1,0 +1,16 @@
+@import '../../scss\ variables/color';
+.wrapper {
+    display: flex;
+    flex-direction: column;    
+    &-page-header{
+        flex: 30%;        
+        padding: 20px;
+        font-size: 2rem;
+        background: $lightseagreen;
+    }
+    &-page-main{
+        flex: 70%;        
+        padding: 20px;
+        background: $lightskyblue;
+    }
+  }

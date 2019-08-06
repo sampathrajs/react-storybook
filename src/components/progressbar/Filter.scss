@@ -1,0 +1,19 @@
+@import '../../scss\ variables/color';
+
+.filter{
+height: 100%;
+transition: width .5s ease-in;
+border-radius: 30px;
+}
+.warning{
+    background: $yellow;
+}
+.success{
+    background: $green;
+}
+.danger{
+    background: $red;
+}
+.default{
+    background: $deepskyblue;
+}

@@ -1,0 +1,15 @@
+@import '../../scss\ variables/color';
+
+.cards {    
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   width: 50%;
+  }
+  .card {
+    flex: 1;    
+    margin: 10px;   
+    background: $honeydew;
+    box-shadow: 0px 5px 5px 5px $darkgray;
+    justify-content: center;    
+  }

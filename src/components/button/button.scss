@@ -1,0 +1,67 @@
+@import '../../scss\ variables/color';
+
+.btn {
+	border: 2px solid $black;
+	background-color: $white;
+	color:$black;
+	padding: 5px 28px;
+	font-size: 16px;
+    cursor: pointer;
+    
+    
+    &-round{
+        min-width: 40px;
+        border-radius: 38px;   
+    }
+    &-icon {
+        font-family: 'Material Icons';
+        width: 32px;
+        font-size: 32px;    
+        margin-right: 16px;
+    }
+    &:hover{
+        background-color: $brown;
+    
+    }
+
+&-success {
+	border-color: $forestgreen;
+	color: $green;
+	&:hover {
+		background-color: $forestgreen;
+		color:$white;
+	}
+}
+&-info {
+	border-color: $deepskyblue;
+	color: $dodgerblue;
+	&:hover {
+		background: $deepskyblue;
+		color:$white;
+	}
+}
+&-warning {
+	border-color: $goldenrod;
+	color:$orange;
+	&:hover {
+		background: $goldenrod;
+		color:$white;
+	}
+}
+&-danger {
+	border-color: $lightcoral;
+	color: $red;
+	&:hover {
+		background: $lightcoral;
+		color:$white;
+	}
+}
+&-default {
+	border-color: $gray;
+	color:$black;
+	&:hover {
+		background: $gray;
+	}
+}
+}
+
