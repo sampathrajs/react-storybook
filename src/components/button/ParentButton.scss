@@ -1,19 +1,126 @@
 @import '../../scss\ variables/color';
 
-.cards {    
-    display: flex;
-   flex-flow: row;
-   justify-content: space-between;
-   width: 100%;
-  }
-  .card {
-    flex: 1;
-    margin: 10px;   
-    background: $honeydew;
-    box-shadow: 0px 5px 5px 5px $darkgray;
-    justify-content: center;
-    > Button{
-      margin-left: 30px;
-      margin-bottom: 20px;
-    }
-  } 
+  .ces-col-12 {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+}
+.ces-col{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.code-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 16px;
+    border: 1px solid #ebedf0;
+    border-radius: 2px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.code-box-demo {
+    padding: 42px 24px 50px;
+    color: rgba(0,0,0,0.65);
+    border-bottom: 1px solid #ebedf0;
+}
+.code-box-meta {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0 0 2px 2px;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+}
+.markdown {
+    color: #314659;
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 10px;
+}
+.markdown code {
+  margin: 0 1px;
+    padding: .2em .4em;
+    font-size: .9em;
+    background: #f2f4f5;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.code-box-title {
+    position: absolute;
+    top: -14px;
+    margin-left: 16px;
+    padding: 1px 8px;
+    color: #777;
+    background: #fff;
+    border-radius: 2px 2px 0 0;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+}
+
+.code-box-description {
+    padding: 18px 24px 12px;
+}
+
+.code-box-actions {
+    padding-top: 12px;
+    text-align: center;
+    border-top: 1px dashed #ebedf0;
+    opacity: .7;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.ces-row {
+    position: relative;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    zoom: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.code-box-demo .btn{
+  margin: 5px;
+}
+
+.padding-l-20{
+  padding-left: 20px;
+}
+.text-left{
+  text-align:left;
+}
+
+.code-expand-icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+.code-expand-icon-show{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+

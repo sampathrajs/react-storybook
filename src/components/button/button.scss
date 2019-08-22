@@ -1,67 +1,93 @@
 @import '../../scss\ variables/color';
+@import '../../scss\ variables/font-size';
 
-.btn {
-	border: 2px solid $black;
+@mixin round() {
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+}
+
+@mixin outerLine($border,$round,$bcolor,$color) {
+		border-color: $bcolor;
+		color: $color;
+		border-radius: $border;
+		@if $round {
+			@include round();
+		}
+		&:hover {
+			background-color: $bcolor;
+			color:$white;
+		}
+}
+
+@mixin shape ($border,$round){
+	&-success {
+		@include outerLine($border,$round,$forestgreen,$green,);
+	}
+	&-info {
+		@include outerLine($border,$round,$deepskyblue,$dodgerblue,);		
+	}
+	&-warning {
+		@include outerLine($border,$round,$goldenrod,$orange,);
+	}
+	&-danger {
+		@include outerLine($border,$round,$lightcoral,$red,);
+	}
+	&-default {
+		@include outerLine($border,$round,$white,$black,);
+	}
+	&-dashed {
+		@include outerLine($border,$round,$lightslategray,$black);		
+		border: 1px dashed $lightslategray;
+	}
+}
+
+.btn{
 	background-color: $white;
 	color:$black;
 	padding: 5px 28px;
-	font-size: 16px;
-    cursor: pointer;
-    
-    
-    &-round{
-        min-width: 40px;
-        border-radius: 38px;   
-    }
-    &-icon {
-        font-family: 'Material Icons';
-        width: 32px;
-        font-size: 32px;    
-        margin-right: 16px;
-    }
-    &:hover{
-        background-color: $brown;
-    
-    }
+	font-size: $font-12;
+	cursor: pointer;	
+	border: 1px solid transparent;
+	border-color: $lightslategray;	
+}
+.block{
+	width: 100%;
+}
+@mixin type($background,$color) {
+	background: $background;
+	color:$color;
+}
+.info{
+	@include type($deepskyblue, $white);
+}
+.waring{
+	@include type($goldenrod, $white);
+}
+.danger{
+	@include type($lightcoral, $white);
+}
+.success{
+	@include type($forestgreen, $white);
+}
+.large{
+	font-size: $font-16;
+}
+.small{
+	font-size: $font-10;
+}
+.dashed{
+	border-color: $white;
+	border: 1px dashed $lightslategray;
+}
+.outline {
+	@include shape(0px,false);
+}
 
-&-success {
-	border-color: $forestgreen;
-	color: $green;
-	&:hover {
-		background-color: $forestgreen;
-		color:$white;
-	}
+.circle-outline{		
+	@include shape(15px,false);
 }
-&-info {
-	border-color: $deepskyblue;
-	color: $dodgerblue;
-	&:hover {
-		background: $deepskyblue;
-		color:$white;
-	}
-}
-&-warning {
-	border-color: $goldenrod;
-	color:$orange;
-	&:hover {
-		background: $goldenrod;
-		color:$white;
-	}
-}
-&-danger {
-	border-color: $lightcoral;
-	color: $red;
-	&:hover {
-		background: $lightcoral;
-		color:$white;
-	}
-}
-&-default {
-	border-color: $gray;
-	color:$black;
-	&:hover {
-		background: $gray;
-	}
-}
+.round{		
+	@include shape(50px,true);	
 }
 

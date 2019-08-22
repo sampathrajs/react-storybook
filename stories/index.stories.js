@@ -36,21 +36,21 @@ var person = {
 // Button component
 storiesOf('Button', module).add('Buttons',()=> <ParentButton ></ParentButton>);
 // Image Component
-storiesOf('Image', module).add('Images',()=> <ParentImage ></ParentImage>);
-// Detail Component
-storiesOf('Detail', module).add('Detail Model',()=> <DetailComponent {...details}></DetailComponent>);
-// Display Component
-storiesOf('Display', module).add('Display Info',()=> <DispalyComponent basic={basicInfo}></DispalyComponent>);
-// Info Component
-storiesOf('Layout', module).add('Flex layout',()=> <InfoComponent person={person}></InfoComponent>);
-// Toast Component
-storiesOf('Toast', module).add('toasters',()=> <ParentToaster ></ParentToaster>);
-// Progress bar component
-storiesOf('Progress bar', module).add('Parent',()=> <ParenProgressbar ></ParenProgressbar>);
-// Card Component
-storiesOf('Card', module).add('card',()=> <ParentCard ></ParentCard>);
-// Model Component
-storiesOf('Model', module).add('Model',()=> <Model ></Model>);
+// storiesOf('Image', module).add('Images',()=> <ParentImage ></ParentImage>);
+// // Detail Component
+// storiesOf('Detail', module).add('Detail Model',()=> <DetailComponent {...details}></DetailComponent>);
+// // Display Component
+// storiesOf('Display', module).add('Display Info',()=> <DispalyComponent basic={basicInfo}></DispalyComponent>);
+// // Info Component
+// storiesOf('Layout', module).add('Flex layout',()=> <InfoComponent person={person}></InfoComponent>);
+// // Toast Component
+// storiesOf('Toast', module).add('toasters',()=> <ParentToaster ></ParentToaster>);
+// // Progress bar component
+// storiesOf('Progress bar', module).add('Parent',()=> <ParenProgressbar ></ParenProgressbar>);
+// // Card Component
+// storiesOf('Card', module).add('card',()=> <ParentCard ></ParentCard>);
+// // Model Component
+// storiesOf('Model', module).add('Model',()=> <Model ></Model>);
 
 
 // // Input Component
